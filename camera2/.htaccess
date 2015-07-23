@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Edimax Network Camera Authentification"
+AuthUserFile /ctf_camera_challenge/camera2/.htpasswd
+require admin
