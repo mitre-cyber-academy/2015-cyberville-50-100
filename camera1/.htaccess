@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Restricted area"
-AuthUserFile /ctf_camera_challenge/camera1/.htpasswd
+AuthUserFile "C:\xampp\htdocs\ctf_camera_challenge\camera1\.htpasswd"
 require valid-user
