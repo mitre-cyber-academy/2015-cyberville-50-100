@@ -25,3 +25,9 @@ Also, the .htaccess files need to be altered for the apache server.
 13. Open the html inspector, and look at the script tag in the head of the html and notice the url. Navigate to that url.
 14. Open the html inspector, and set the visibility of the div with the id ```blur``` to ```visibility: hidden;``` in the css element.style editor.
 15. Enter the key found in the video stream to scoreboard for 100 points.
+
+
+Keys:
+
+MCA-73E94D62 (50pts)
+MCA-CD47E4D4 (100pts)

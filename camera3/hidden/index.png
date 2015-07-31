@@ -70,6 +70,8 @@
       <div id="header">
         <img src="axis.gif"/>
         <span class="header_text">AXIS P1405-LE Network Camera</span>
+        <br/>
+        <span>*MCA-CD4 ...*</span>
       </div>
       <div id="content-live">
           <div class="left" style="padding-right: 10px;">
