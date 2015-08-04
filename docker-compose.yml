@@ -1,0 +1,29 @@
+camera0:
+  build: ./camera0
+  ports:
+   - "127.0.0.1:80:80"
+
+camera1:
+  build: ./camera1
+  ports:
+   - "127.0.0.1:81:80"
+
+camera2:
+  build: ./camera2
+  ports:
+   - "127.0.0.1:82:80"
+
+camera3:
+  build: ./camera3
+  ports:
+   - "127.0.0.1:83:80"
+
+camera4:
+  build: ./camera4
+  ports:
+   - "127.0.0.1:84:80"
+
+camera5:
+  build: ./camera5
+  ports:
+   - "127.0.0.1:85:80"
