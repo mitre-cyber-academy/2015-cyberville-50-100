@@ -2,11 +2,13 @@
 
 This is a primarily web-based challenge, where the user is given an IP address to start out, and must traverse a series of network camera interfaces in order to gain the keys and, in turn, access to the city's "eyes".
 
-Each of the directories in this repo (camera0-5) represent a web interface, but need to be simulated as 5 different IP addresses so that the user can't intuitively guess that the directory names are "camera" then "number" from the pattern in the url.
+Each of the directories in this repo (camera0-5) represent a web interface, each placed on a different port on a docker service.
 
-This challenge needs to be put on a number of apache servers.
+#### To build
+1. Pull the repository
+2. Run ```docker-compose up -d```
 
-Also, the .htaccess files need to be altered for the apache server.
+Note that video URLs and ports need to be changed for the actual event. (HTACCESS IS CURRENTLY NOT WORKING IN APACHE)
 
 #### Solution
 
