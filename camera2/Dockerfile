@@ -5,5 +5,9 @@ FROM httpd:2.4
 COPY ./custom-httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY ./root_dir/ /usr/local/apache2/htdocs/
 
+# Create a password file for this specific camera
+RUN htpasswd -b -c /usr/local/apache2/htdocs/.htpasswd admin 1234
+RUN chmod 0644 /usr/local/apache2/htdocs/.htpasswd
+
 # Expose to outside containers
 EXPOSE 80
