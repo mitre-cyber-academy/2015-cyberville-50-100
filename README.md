@@ -12,7 +12,7 @@ Note: Video URLs must be assigned for Youtube streams.
 
 #### Solution
 
-1. Visit [CHALLENGE IP]:1800/index.html . 
+1. Visit ```[CHALLENGE IP]:1800/index.html``` . 
 2. Scan the QR code with an app like [Google Goggles](https://play.google.com/store/apps/details?id=com.google.android.apps.unveil) or [ZXing Decoder](http://zxing.org/w/decode.jspx), and record the relevant information.
 3. Click the ```Next``` arrow.
 4. Enter the username and password obtained from the QR code in the authentication box when prompted.
@@ -23,8 +23,8 @@ Note: Video URLs must be assigned for Youtube streams.
 9. Change the ending of the url to be ```/``` rather than ```/404.html``` to view the directory structure.
 10. Click on the ```hidden/``` directory.
 11. Download ```index.png``` and save it as ```index.html```.
-12. Open ```index.html``` and open the html inspector. Record the port mapped to clicking the right arrow. Enter [CHALLENGE IP]:[RECORDED IP]/index.html into the browser URL bar.
-13. Open the html inspector, and look at the script tag in the head of the html and notice the url. Navigate to that port with the same [CHALLENGE IP].
+12. Open ```index.html``` and open the html inspector. Record the port mapped to clicking the right arrow. Enter ```[CHALLENGE IP]:[RECORDED IP]/index.html``` into the browser URL bar.
+13. Open the html inspector, and look at the script tag in the head of the html and notice the url. Navigate to that port with the same ```[CHALLENGE IP]```.
 14. Open the html inspector, and set the visibility of the div with the id ```blur``` to ```visibility: hidden;``` in the css element.style editor.
 15. Concatenate the pieces of the flag from these parts of the challenge to form the final key. Enter the final key to scoreboard for 100 points.
 
