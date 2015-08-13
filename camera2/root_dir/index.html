@@ -48,9 +48,16 @@
 				float: left;
 			}
 		</style>
+
+		<script type="text/javascript">
+			function setHref(){
+				document.getElementById('last').href = window.location.protocol + "//" + window.location.hostname + ":5013/index.html";
+				document.getElementById('next').href = window.location.protocol + "//" + window.location.hostname + ":8999/404.html";
+			}
+		</script>
 	</head>
 
-	<body>
+	<body onload="setHref()">
 		<div id="header">
 				<span>*Part 1 Completed (<b>...4D62</b>)*</span>
 				<div id="header_banner"><img src="banner.png" width="1024" height="93" border="0" alt=""></div>
@@ -62,7 +69,7 @@
 			<div id="content-live">
 				<div class="left" style="padding-right: 10px;">
 					<div style="margin-top: 215px; background-color: #fff;">
-						<a href="../camera1/index.html">
+						<a id="last" href="#">
 							<img src="arrow-left.png" width="50px"/>
 							<span style="display: block;">Back</span>
 						</a>
@@ -73,7 +80,7 @@
 				</div>
 				<div class="left" style="padding-left: 10px;">
 					<div style="margin-top: 215px; background-color: #fff;">
-						<a href="../camera3/index.html">
+						<a id="next" href="#">
 							<img src="arrow-right.png" width="50px"/>
 							<span style="display: block;">Next</span>
 						</a>

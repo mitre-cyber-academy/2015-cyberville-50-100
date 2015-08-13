@@ -24,9 +24,16 @@
 				float: left;
 			}
 		</style>
+
+		<script type="text/javascript">
+			function setHref(){
+				document.getElementById('last').href = window.location.protocol + "//" + window.location.hostname + ":1800/index.html";
+				document.getElementById('next').href = window.location.protocol + "//" + window.location.hostname + ":4171/index.html";
+			}
+		</script>
 	</head>
 
-	<body>
+	<body onload="setHref()">
 		<div class="header">
 			<h1>BUILDING CAM - OUTWARD FACING</h1>
 			<span style="color: white;"> ** MCA-73E9... **</span>
@@ -34,7 +41,7 @@
 		<div style="position: absolute; left: 50%; margin-right: -50%; transform: translate(-50%, 0%)">
 			<div class="left" style="padding-right: 10px;">
 				<div style="margin-top: 215px; background-color: #fff;">
-					<a href="../camera0/index.html">
+					<a id="last" href="#">
 						<img src="arrow-left.png" width="50px"/>
 						<span style="display: block;">Back</span>
 					</a>
@@ -45,7 +52,7 @@
 			</div>
 			<div class="left" style="padding-left: 10px;">
 				<div style="margin-top: 215px; background-color: #fff;">
-					<a href="../camera2/index.html">
+					<a id="next" href="#">
 						<img src="arrow-right.png" width="50px"/>
 						<span style="display: block;">Next</span>
 					</a>

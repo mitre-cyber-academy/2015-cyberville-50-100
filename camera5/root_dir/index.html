@@ -75,9 +75,15 @@
         float: left;
       }
     </style>
+
+    <script type="text/javascript">
+      function setHref(){
+        document.getElementById('last').href = window.location.protocol + "//" + window.location.hostname + ":2825/index.html";
+      }
+    </script>
   </head>
 
-  <body>
+  <body onload="setHref()">
       <div id="header">
         <img src="logo.png"/>
       </div>
@@ -90,7 +96,7 @@
       <div id="content-live">
           <div class="left" style="padding-right: 10px;">
             <div style="margin-top: 215px;">
-              <a href="../camera4/index.html" style="color: #fff;">
+              <a id="last" href="#" style="color: #fff;">
                 <img src="arrow-left.png" width="50px"/>
                 <span style="display: block; color: #fff;">Back</span>
               </a>

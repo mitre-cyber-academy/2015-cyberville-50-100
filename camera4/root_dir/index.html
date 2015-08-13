@@ -6,7 +6,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
           $("#next").click(function(){
-              // window.location.href = "../camera5/index.html";
+              // window.location.href = ":747/index.html";
               alert('You do not have permission to visit the next camera!');
           });
           $("#next").on("contextmenu", function(){
@@ -60,9 +60,15 @@
         float: left;
       }
     </style>
+
+    <script type="text/javascript">
+      function setHref(){
+        document.getElementById('last').href = window.location.protocol + "//" + window.location.hostname + ":8999/404.html";
+      }
+    </script>
   </head>
 
-  <body>
+  <body onload="setHref()">
       <div id="header">
         <img src="logo.png"/>
         <span style="color: white; font-weight: bold;">*...7E4...*</span>
@@ -70,7 +76,7 @@
       <div id="content-live">
           <div class="left" style="padding-right: 10px;">
             <div style="margin-top: 215px;">
-              <a href="../camera3/index.html" style="color: #fff;">
+              <a id="last" href="" style="color: #fff;">
                 <img src="arrow-left.png" width="50px"/>
                 <span style="display: block; color: #fff;">Back</span>
               </a>

@@ -21,9 +21,15 @@
 				float: left;
 			}
 		</style>
+
+		<script type="text/javascript">
+			function setHref(){
+				document.getElementById('next').href = window.location.protocol + "//" + window.location.hostname + ":5013/index.html";
+			}
+		</script>
 	</head>
 
-	<body>
+	<body onload="setHref()">
 		<div class="header">
 			<h1>Airport Camera</h1>
 		</div>
@@ -31,7 +37,7 @@
 			<iframe width="640" height="480" src="https://www.youtube.com/embed/a_2qAG7UkkQ?modestbranding&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class="left" style="padding-left: 10px;">
-			<a href="../camera1/index.html">
+			<a id="next" href="#">
 				<img src="arrow-right.png" style="padding-top: 215px;" width="50px"/>
 				<span style="display: block;">Next</span>
 			</a>
